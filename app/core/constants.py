@@ -1,0 +1,11 @@
+ATTENDANCE_ABSENT = 0
+ATTENDANCE_PRESENT = 1
+ATTENDANCE_UNCHECKED = 2
+
+ATTENDANCE_LABELS = {
+    0: "absent",
+    1: "present",
+    2: "unchecked"
+}
+
+FACE_SIMILARITY_THRESHOLD = 0.7
