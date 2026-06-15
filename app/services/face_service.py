@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from app.core.face import face_app
+from app.core.face import get_face_app
 
 
 def extract_embedding(image_path: str):
@@ -11,6 +11,7 @@ def extract_embedding(image_path: str):
     if img is None:
         return None
 
+    face_app = get_face_app()
     faces = face_app.get(img)
 
     if len(faces) == 0:
